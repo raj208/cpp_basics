@@ -6,10 +6,11 @@ class binary
 {
 private:
     string s;
+    void chk_bin(void);
 public:
     void read(void);
-    void chk_bin(void);
-    void ones_cpmpliment(void)
+    void display(void);
+    void ones_compliment(void);
 };
 
 void binary::read(void)
@@ -28,18 +29,41 @@ void binary::chk_bin(void){
         
     }
 }
-void binar::ones_compliment(void)
+void binary::ones_compliment(void)
 {
-    chk_bin();
+    chk_bin();  ////nested 
     for (int i = 0; i < s.length(); i++)
     {
-        /* code */
+        if (s.at(i) == '0')
+        {
+            s.at(i) = '1';
+        }
+        else
+        {
+            s.at(i) = '0';
+        }
+        
     }
     
+}
+void binary::display(void)
+{
+    cout<<"Displaying your binary number"<<endl;
+    for (int i = 0; i < s.length(); i++)
+    {
+        cout<<s.at(i);
+    }
+    cout<<endl;
 }
 
 
 int main(){
-    
+    binary b;
+    b.read();
+    b.display();
+    // chk_bin();     this function is private , so only classes method can access it.
+    cout<<"swapping binary"<<endl;
+    b.ones_compliment();
+    b.display();
     return 0;
 }
