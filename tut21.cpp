@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Employee
@@ -10,16 +10,18 @@ public:
     void setId(void)
     {
         salary = 122;
-        cout<<"Enter the id of employee"<< endl;
-        cin>>id;
+        cout << "Enter the id of employee" << endl;
+        cin >> id;
     }
 
     void getId(void)
     {
-        cout<<"The id of this employee is "<< id <<endl;    }
-} ;
+        cout << "The id of this employee is " << id << endl;
+    }
+};
 
-int main(){
+int main()
+{
     // Employee harry, rohan, lovish, shruti;
     // harry.setId();
     // harry.getId();
@@ -29,7 +31,6 @@ int main(){
         fb[i].setId();
         fb[i].getId();
     }
-    
 
     return 0;
 }
