@@ -31,7 +31,11 @@ void binary::chk_bin(void){
 }
 void binary::ones_compliment(void)
 {
+<<<<<<< HEAD
     chk_bin();  ////nested 
+=======
+    chk_bin();  
+>>>>>>> d57586aba127b5556305158ab586d79a0f2426af
     for (int i = 0; i < s.length(); i++)
     {
         if (s.at(i) == '0')
