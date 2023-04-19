@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+<<<<<<< HEAD
 // 1 + 4i
 // 5 + 8i
 // -------
@@ -50,3 +51,9 @@ int main(){
 6. It cannot access the members directly by their names and need object_name.member_name to access any member.
 
 */
+=======
+int main(){
+    cout<<"Hello world ";
+    return 0;
+}
+>>>>>>> d73cedd1498d7353f5505d2f259c6c1cad8a9868
